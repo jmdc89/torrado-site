@@ -4,11 +4,11 @@ import {
     FaLinkedinIn,
     FaBehance,
   } from "react-icons/fa"
-
+import {footer} from './footer.module.scss'
 
 const Footer = () => {
   return (
-      <footer className="footer">
+      <footer className={footer}>
           <div>
                 <li>
                     <a href="https://www.facebook.com/" target="_blank" className="social-link">
