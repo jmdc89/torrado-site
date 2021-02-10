@@ -1,12 +1,12 @@
 import React from "react"
 
-const AboutPage = () => {
+const InstagramPage = () => {
     return (
       <div>
-          <h1>About.</h1>
+          <h1>Hello.</h1>
           <h2>Im the about page</h2>
       </div>
     )
 }
 
-export default AboutPage
+export default InstagramPage
