@@ -3,10 +3,12 @@ import Layout from '../components/Layout'
 
 const HomePage = () => {
     return (
-      <div>
+      <Layout>
+        <div>
           <h1>Home.</h1>
           <h2>Im the about page</h2>
       </div>
+      </Layout>
     )
 }
 

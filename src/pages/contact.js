@@ -3,10 +3,12 @@ import Layout from '../components/Layout'
 
 const ContactPage = () => {
     return (
-      <div>
+      <Layout>
+        <div>
           <h1>Contact.</h1>
           <h2>Im the contact page</h2>
-      </div>
+        </div>
+      </Layout>
     )
 }
 
