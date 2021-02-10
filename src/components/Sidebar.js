@@ -5,7 +5,7 @@ import {link} from './sidebar.module.scss'
 
 function Sidebar() {
     return (
-        <nav >
+
             <ul>
                 <li>
                    <Link className={link} to="/home">Home</Link> 
@@ -23,7 +23,7 @@ function Sidebar() {
                   <Link className={link} to="/instagram">Instagram</Link>  
                 </li>
             </ul>       
-        </nav> 
+  
     )
 }
 

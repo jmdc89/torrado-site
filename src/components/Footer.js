@@ -3,23 +3,18 @@ import {
     FaFacebookMessenger,
     FaLinkedinIn,
     FaBehance,
+    FaInstagram,
   } from "react-icons/fa"
-import {footer} from './footer.module.scss'
+import {footer, icon} from './footer.module.scss'
 
 const Footer = () => {
   return (
       <footer className={footer}>
           <div>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" className="social-link">
-                    <FaFacebookMessenger/>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://twitter.com" target="_blank" className="social-link">
-                    <FaFacebookMessenger/>
-                    </a>
-                </li>
+                <a href="https://www.instagram.com/thelonelyboy/?hl=es" target="_blank" className={icon}>
+                <FaInstagram/>
+                </a>
+                <p>davidtorradoalfonso@gmail.com</p>
           </div>
       </footer>
   )
