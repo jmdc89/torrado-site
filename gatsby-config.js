@@ -10,13 +10,15 @@ module.exports = {
     author: 'JMDC'
   },
   /* Your site config here */
-  plugins: [`gatsby-plugin-sass`,
+  plugins: [
+    `gatsby-plugin-sass`,
     {
         resolve: `gatsby-source-filesystem`,
           options: {
             name: `src`,
             path: `${__dirname}/src/`,
           },
-      }
+    },
+    'gatsby-plugin-sharp'
   ]
 }
