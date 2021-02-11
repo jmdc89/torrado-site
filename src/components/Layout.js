@@ -9,9 +9,7 @@ import {container, content} from './layout.module.scss'
 function Layout(props) {
     return (
         <div className={container}>
-            <header>
                <Header/>
-            </header>
             <nav className={content}>
                 <Sidebar/>
             </nav>  
