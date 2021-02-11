@@ -1,4 +1,22 @@
-.link {
-    text-decoration: none;
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 1.5rem;
+}
+
+.nav-item {
     color: white;
+    font-size: .9rem;
+    margin-right: 1.3rem;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: gray;
+}
+
+.active-nav-item {
+    color: #b88f20;
 }

@@ -1,29 +1,27 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import Layout from './Layout'
-import {link} from './sidebar.module.scss'
+import {navItem, navList, activeNavItem} from './sidebar.module.scss'
 
 function Sidebar() {
     return (
-
-            <ul>
+            <ul className={navList}>
                 <li>
-                   <Link className={link} to="/home">Home</Link> 
+                   <Link className={navItem} activeClassName={activeNavItem}  to="/home">Home</Link> 
                 </li>
                 <li>
-                   <Link className={link} to="/gallery">Gallery</Link> 
+                   <Link className={navItem} activeClassName={activeNavItem}  to="/gallery">Gallery</Link> 
                 </li>
                 <li>
-                   <Link className={link} to="/about">About me</Link> 
+                   <Link className={navItem} activeClassName={activeNavItem}  to="/about">About me</Link> 
                 </li>
                 <li>
-                    <Link className={link} to="/contact">Contact</Link>
+                    <Link className={navItem} activeClassName={activeNavItem}  to="/contact">Contact</Link>
                 </li>
                 <li>
-                  <Link className={link} to="/instagram">Instagram</Link>  
+                  <Link className={navItem} activeClassName={activeNavItem}  to="/instagram">Instagram</Link>  
                 </li>
             </ul>       
-  
     )
 }
 
