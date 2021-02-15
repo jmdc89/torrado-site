@@ -19,6 +19,14 @@ module.exports = {
             path: `${__dirname}/src/`,
           },
     },
-    'gatsby-plugin-sharp'
+    'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `8urwtin6d2ax`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `W3zQUq7mswG6ucSpB70n-CEvVs4mhQgehz4cyuFlQSA`,
+      },
+    },
   ]
 }
