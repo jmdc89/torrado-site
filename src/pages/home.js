@@ -14,26 +14,28 @@ console.log(images)
 
     return (
       <Layout>
-        <section className={home}>
+    
+          <section>
             {images.map(image => {
               console.log(image)
-              return <h2>{image.title}</h2>
+              return <article key={image.id}>
+                <Img fluid={image.image.fluid} alt={image.title}></Img>
+              </article>
             })}
         </section>
+    
+        
 
       </Layout>
     )
 }
 
-export default HomePage
-
-
-const ComponentName = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
 
 export const query = graphql`
   {
     allContentfulImage {
       nodes {
+        id
         slug
         title
         category
@@ -47,7 +49,7 @@ export const query = graphql`
   }
 `
 
-// export default ComponentName
+export default HomePage
 
 
 

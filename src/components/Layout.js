@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import '../styles/index.scss'
 import {container, content} from './layout.module.scss'
 
-function Layout(props) {
+const Layout = ({children}) => {
     return (
         <div className={container}>
                <Header/>
@@ -19,3 +19,29 @@ function Layout(props) {
 }
 
 export default Layout
+
+
+
+// import React from "react"
+// // import "../css/main.css"
+// import Navbar from "./Navbar"
+// import Sidebar from "./Sidebar"
+// import Footer from "./Footer"
+
+// const Layout = ({ children }) => {
+//   const [isOpen, setIsOpen] = React.useState(false)
+//   const toggleSidebar = () => {
+//     setIsOpen(!isOpen)
+//   }
+
+//   return (
+//     <>
+//       <Navbar toggleSidebar={toggleSidebar} />
+//       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+//       {children}
+//       <Footer />
+//     </>
+//   )
+// }
+
+// export default Layout
